@@ -18,6 +18,10 @@ net.createServer(function(socket) {
   socket.write("Welcome " + socket.name + "\n\r");
   broadcast("\n\r" + socket.name + " joined the chat" + "\n\r", socket);
 
+
+  // my change here....
+
+  
   var message = '';
   // Handle incoming messages from clients.
   socket.on('data', function(data) {
